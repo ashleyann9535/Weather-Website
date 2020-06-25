@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Website</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous" />
+      <script src="https://kit.fontawesome.com/143b46e58e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/weather.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">  
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Weather Website
+      </h1>
+      <form id="search">
+      <input type="search" placeholder="City" id="place" />
+      <input type="submit" value="search" />
+      </form>
+      <header id="currentDate"> Date </header>
+      <header id="currentTime"> Time </header>
+      <h2>
+        Asheville, NC
+      </h2>
+      <section class="current">
+        <i class="fas fa-cloud-sun"></i>
+        <br>
+        <form id="degree">
+        <small class="temp" id="temp">78° </small> 
+          <a href="#" id="fahrenheit-link"> F </a>
+         | 
+          <a href="#" id="celsius-link"> C </a>
+        </form>
+    </section>
+        <div class="card info" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Weather Information</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Feels Like: 76°</h6>
+              <p class="card-text">
+                Humidity: 62%
+                <br>
+                Pollion Count: LOW
+                <br>
+                UV:3
+                <br> 
+                Sunrise: 6:16 AM
+                <br>
+                Sunset: 8:38 PM
+              </p>
+              <a href="https://www.accuweather.com/en/us/asheville/28801/weather-radar/329813" class="card-link">Radar</a>
+            </div>
+          </div>
+        <p class="hour">
+          Hourly
+        </p>
+        <div class="row">
+            <div class="hour-time">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card" style="width: 8rem;">
+                          <i class="fas fa-cloud-sun"></i>
+                            <div class="card-body">
+                              <h5 class="card-title">4 PM</h5>
+                              <p class="card-text">78°F</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 8rem;">
+                          <i class="fas fa-cloud-sun"></i>
+                            <div class="card-body">
+                              <h5 class="card-title">5 PM</h5>
+                              <p class="card-text">75°F</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 8rem;">
+                          <i class="fas fa-cloud-sun"></i>
+                            <div class="card-body">
+                              <h5 class="card-title">6 PM</h5>
+                              <p class="card-text">75°F</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 8rem;">
+                          <i class="fas fa-cloud-sun"></i>
+                            <div class="card-body">
+                              <h5 class="card-title">7 PM</h5>
+                              <p class="card-text">75°F</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <p class="day">
+            5-Day Forecast
+            <div class="row days">
+                <div class="col-2">
+                    <div class="card" style="width: 10rem;">
+                      <i class="fas fa-cloud-sun"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Saturday</h5>
+                          <p class="card-text">77°F/55°F</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2">
+                  <div class="card" style="width: 10rem;">
+                    <i class="fas fa-cloud-sun"></i>
+                      <div class="card-body">
+                        <h5 class="card-title">Sunday</h5>
+                        <p class="card-text">74°F/47°F</p>
+                      </div>
+                    </div>
+              </div>
+                <div class="col-2">
+                    <div class="card" style="width: 10rem;">
+                      <i class="fas fa-sun"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Monday</h5>
+                          <p class="card-text">75°F/54°F</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width: 10rem;">
+                      <i class="fas fa-sun"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Tuesday</h5>
+                          <p class="card-text">81°F/61°F</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2">
+                    <div class="card" style="width: 10rem;">
+                      <i class="fas fa-cloud-sun"></i>
+                        <div class="card-body">
+                          <h5 class="card-title">Wednesday</h5>
+                          <p class="card-text">84°F/64°F</p>
+                        </div>
+                      </div>
+                </div>    
+            </div>
+        </p>
+    </div>
+    <script src="src/src.js"></script>
+  </body>
+</html>

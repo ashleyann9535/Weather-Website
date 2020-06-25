@@ -1,0 +1,75 @@
+body {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  font-family: "Josefin Sans", sans-serif;
+}
+h1 {
+  color: #27496d;
+  font-size: 50px;
+  padding: 20px;
+  position: relative;
+}
+header {
+  font-size: 22px;
+}
+
+h2 {
+  margin: 50px, auto, 10px, auto;
+  font-size: 65px;
+  font-weight: bolder;
+  position: relative;
+  top: 35px;
+}
+.current {
+  font-size: 45px;
+  padding: 10px;
+  text-align: center;
+  border: 10px solid #27496d;
+  border-radius: 90px;
+  box-sizing: content-box;
+  width: 30%;
+  position: relative;
+  bottom: 100px;
+  left: 450px;
+}
+.temp {
+  font-size: 65px;
+}
+
+.info {
+  position: relative;
+  top: -150px;
+  font-size: 20px;
+}
+
+i {
+  text-align: center;
+}
+.hour {
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  bottom: 350px;
+  right: 170px;
+  font-weight: bolder;
+  padding: auto auto 0 auto;
+}
+.col-3 {
+  position: relative;
+  text-align: center;
+  font-size: 35px;
+  display: block;
+  bottom: 360px;
+  left: 330px;
+}
+.day {
+  position: relative;
+  bottom: 360px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.col-2 {
+  position: relative;
+  bottom: 375px;
+  text-align: center;
+  font-size: 25px;
+}
