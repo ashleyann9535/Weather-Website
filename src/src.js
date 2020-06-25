@@ -71,9 +71,11 @@ function myWeather(response) {
 }
 
 function searchWeather(response) {
-  let searchWeather = document.querySelector("small");
+  let searchWeather = document.querySelector("#temp");
   let searchTemp = Math.round(response.data.main.temp);
   searchWeather.innerHTML = `${searchTemp}°`;
+  let searchHumity = response.data.main.humidity;
+  document.querySelector("#humidity").innerHTML = `Humidity: ${searchHumity}%`;
 }
 
 function updatedTemp() {
@@ -84,3 +86,22 @@ function updatedTemp() {
 }
 let citySearch = document.querySelector("#search");
 citySearch.addEventListener("submit", updatedTemp);
+
+function changeFahrenheit(event) {
+  event.preventDefault();
+  let tempChange = document.querySelector("#temp");
+  tempChange.innerHTML = `72°`;
+}
+
+function changeCelsius(event) {
+  event.preventDefault();
+  let tempChange = document.querySelector("#temp");
+  let formulaC = Math.round(((72 - 32) * 5) / 9);
+  tempChange.innerHTML = `${formulaC}°`;
+}
+
+let fahrenheit = document.querySelector("#fahrenheit-link");
+fahrenheit.addEventListener("click", changeFahrenheit);
+
+let celsius = document.querySelector("#celsius-link");
+celsius.addEventListener("click", changeCelsius);
